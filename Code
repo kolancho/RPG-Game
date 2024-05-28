@@ -63,7 +63,6 @@ class Character {
     }
 }
 
-// Warrior Class
 class Warrior extends Character {
     private int strength;
     private int armor;
@@ -90,7 +89,6 @@ class Warrior extends Character {
     }
 }
 
-// Mage Class
 class Mage extends Character {
     private int intelligence;
     private int spellPower;
@@ -120,7 +118,6 @@ class Mage extends Character {
 }
 
 
-// Rogue Class
 class Rogue extends Character {
     private int agility;
     private int dexterity;
@@ -148,12 +145,11 @@ class Rogue extends Character {
 }
 public class Main {
     public static void main(String[] args) {
-        // Creating instances
+        
         Warrior warrior = new Warrior("Shisharkata", 100, 50, 1, 20, 15);
         Mage mage = new Mage("Gandalf", 70, 100, 1, 25, 30);
         Rogue rogue = new Rogue("Kamioncho", 80, 40, 1, 30, 25);
 
-        // Demonstrate different abilities and interactions between characters
         warrior.attack(mage);
         warrior.defend(warrior, rogue);
         mage.castSpell(rogue);
